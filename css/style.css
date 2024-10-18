@@ -43,18 +43,23 @@ header{
 .logo {
 	height: 72px;
 	width: 72px;
-    border: medium dashed green;
+
 }
+.logofooter {
+	height: 120px;
+	width: 120px;
+ 
+}
+
 .navbar{
 	display: flex;
 	padding-left: 140px;
-    border: medium dashed rgb(63, 30, 172);
-	
+  
 }
 .navbar a{
 	color: var(--bg-color);
 	font-size: var(--medium-font);
-	font-weight:600px;
+	font-weight:800px;
 	padding: 10px 22px;
 	transition: ease .40s;
 }
@@ -103,8 +108,8 @@ header{
 
 /*******************************************/
 section{
-	padding: 50px 10%;
-    border: medium dashed rgb(128, 0, 2);
+	padding: 40px 80px;
+
 }
 .home{
 	position: relative;
@@ -112,11 +117,11 @@ section{
 	height: 100vh;
 	background: url(../img/background.png);
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	align-items: center;
-	border: medium dashed rgb(63, 30, 172);
+
 }
 .home2{
 	position: relative;
@@ -124,11 +129,10 @@ section{
 	height: 10vh;
 	background: url(../img/background.png);
 	background-size: cover;
-	background-position: center;
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
 	align-items: center;
-	border: medium dashed rgb(63, 30, 172);
+	
 }
 
 h1{
@@ -145,8 +149,8 @@ h1{
 	font-size: 24px;
 	line-height: 1.2;
 	color:var(--thired-color);
-	font-weight: 600;  /* Semi Bold */
-	font-family: 'Inter', sans-serif;/**/
+	font-weight: 600; 
+	font-family: 'Inter', sans-serif;
 	letter-spacing: 4px;
 	margin-bottom: 10px;
 }
@@ -154,7 +158,7 @@ h1{
 	display: inline-block;
 	background:var(--second-color);
 	color: var(--bg-color);
-	font-family: 'Inter', sans-serif;/**/
+	font-family: 'Inter', sans-serif;
 	border-radius: 4px;
 	padding: 10px 10px;
 	font-size: 1rem;
@@ -163,11 +167,12 @@ h1{
 .home-text .home-btn {
 	padding: 15px 30px;
 	font-size: 24px;
-	font-weight: 600;  /* Semi Bold */
+	font-weight: 600; 
      }
 
 .home-btn:hover{
 	background: var(--bg-color);
+	color: #933C24;
 	transform: scale(1.1);
 }
 
@@ -177,16 +182,17 @@ h1{
 	font-size: 24px;
 	padding: 15px 30px;
 	color:var(--thired-color);
-	font-family: 'Inter', sans-serif;/**/
+	font-family: 'Inter', sans-serif;
 	border-radius: 4px;
-	transition: ease .40s;}
+	transition: ease .40s;
+}
 
 
 	header.sticky {
 		background: url(../img/background.png);
-		background-repeat: no-repeat; /* Empêche la répétition de l'image */
-		background-size: cover; /* L'image couvre toute la largeur du conteneur */
-		background-position:top ; /* Centre l'image dans le header */
+		background-repeat: no-repeat;
+		background-size: cover; 
+		background-position:top ;
 		box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 	  }
 	  
@@ -200,7 +206,7 @@ h1{
 	font-size: 74px;
 	line-height: 1.2;
 	font-family: 'Sansita Swashed', cursive;
-    font-weight: 400; /* Regular *//**/
+    font-weight: 400; 
 	letter-spacing: 4px;
 	margin-bottom: 100px;
 }
@@ -218,25 +224,24 @@ h2 {
 	align-items: center;
 	text-align: center;
 	justify-content: center;
-	border: medium dashed rgb(128, 0, 2);
+
 }
 
 .photo-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colonnes fixes */
-    grid-gap: 5px; /* Espace entre les images */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px; 
 	justify-content: start;
-	width: 100%;
-	
-	margin: 0 auto;
+	width: 100%; 
+	margin: 40px auto;
 }
 
 .photo-grid img {
-    width: 100; /* Les images prennent toute la largeur de leur cellule */
-    height: auto; /* Conserve les proportions des images */
-    object-fit: cover; /* Assure que l'image remplit bien sa cellule sans être déformée */
-	position: relative; /* Position relative pour permettre le déplacement avec margin */
-	border: medium dashed rgb(128, 0, 2);
+    width: 100; 
+    height: auto; 
+    object-fit: cover; 
+	position: relative;
+
 }
 
 
@@ -254,24 +259,24 @@ h2 {
 /*************************************************    contenu menu  ***********************/
 .container {
 	display: flex;
-	/*         Centre verticalement */
-	justify-content: space-between; /* Laisse de l'espace entre le texte et l'image */
+
+	justify-content: space-between; 
 	padding: 20px;
-	gap: 20px;                    /* Espace entre le texte et l'image */
-	border: medium dashed rgb(30, 0, 128);
+	gap: 20px;                   
+
  
 }
 .container  img  {
-	width: 50%;                   /* L'image occupe 50% de la largeur */
-	height: 700px;                 /* L'image occupe 90% de la hauteur de l'écran */
-	object-fit: contain;             /* Assure que l'image remplit bien son espace sans être déformée */
+	width: 50%;                  
+	height: 700px;                 
+	object-fit: contain;           
 }
 .container .text {
-	width: 50%;                   /* Le texte occupe 50% de la largeur */
+	width: 50%;             
 	padding: 0 20px;
-	text-align: center;             /* Aligne le texte à gauche */
+	text-align: center;           
 }
-.container-box {     /* utlise dans le menu */
+.container-box {    
 	
 	width:100%;
 	height:auto ;
@@ -324,7 +329,7 @@ h2 {
 .second-navbar{
 	display: flex;
 	width: 100%;
-    border: medium dashed rgb(63, 30, 172);
+  
 	justify-content: space-around;
 	padding: 10px 10%;
 }
@@ -355,19 +360,25 @@ h2 {
 
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 2rem;
-	align-items: center;
-	margin-top: 5rem;
+	grid-gap: 20px;
+	width: 100%; 
+	margin: 40px auto;
+
+
 	
 }
 .flex-item {
     display: flex;
 	color: #fff;
 	font-size: 24;
-	font-weight: 600;
-	border: medium dashed rgb(36, 128, 0);
-}
+	font-weight: 800px;
 
+}
+.flex-item > p {
+	color: #fff;
+	font-size: 36px; /* Ajout de l'unité px */
+	font-weight: 800; /* Suppression de px car font-weight est juste un nombre */
+  }
 
 
 .flex-container-row {
@@ -375,19 +386,27 @@ h2 {
     flex-wrap: wrap;
 	flex-direction: row;
     justify-content: space-between;
-    align-content: space-between;  
-	border: medium dashed rgb(128, 0, 2);
+    align-content: space-between;
+	margin: 20px 10px;  
+	
 }
 .container-box p {
-	font-size: 15px;
-	color: var(--second-color);
+	font-size: 24px;
+	color: #fff;
 	line-height: 2;
+	text-align: left;
 }
-.container-box:hover{
-	box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
-	border: 1px solid transparent;
-	transform: translateY(-3px);
+.container-box .home-btn {
+	display: inline-block;
+	background:var(--second-color);
+	color: var(--bg-color);
+	font-family: 'Inter', sans-serif;
+	border-radius: 4px;
+	font-size: 24px;
+	margin: 20px 0px;
+
 }
+
 .center{
 	text-align: center;
 }
@@ -396,9 +415,8 @@ h2 {
 	position: relative;
 	transition: all .3s cubic-bezier(.445,.05,.55,.95);
 	will-change: filter;
-	cursor: pointer;
-	width: 373px;
-	height: 386px;
+	width: 100% ; 
+	height: auto;
 }
 .thum img{
 	width: 100%;
@@ -411,6 +429,7 @@ h2 {
 	justify-content: space-around;
 	padding-top: 24px;
 }
+
 
 .thum:hover{
 	filter: brightness(100%) hue-rotate(45deg);
@@ -428,7 +447,7 @@ h2 {
     align-items: stretch; 
     justify-content: start; 
 	width: 880px;
-	border: medium dashed rgb(36, 128, 0);
+	
 	margin :  0 auto ; 
 	
 }
@@ -471,15 +490,20 @@ h2 {
 	font-weight: 400;
 }
 
-
+.map {
+    width: 100%; 
+    height: 440px; 
+    background: url(../img/map1.png) no-repeat center center;
+    background-size: cover; 
+	text-align: center;
+	margin: 20px auto;
+}
 
 .promo {
-    width: 100%; /* Prend toute la largeur de la page */
-    height: 440px; /* Hauteur fixe */
-    background: url(../img/promo.png) no-repeat center center; /* Image centrée, sans répétition */
-    background-size: cover; /* L'image couvre toute la div, sans déformation */
-    border: #000000;
-    border-style: dashed;
+    width: 100%;
+    height: 440px;
+    background: url(../img/promo.png) no-repeat center center; 
+    background-size: cover;
 	text-align: center;
 	margin: 0 auto;
 }
@@ -515,94 +539,13 @@ h2 {
 
 
 
-/*********************** footer *****************/
-#sectionfooter{
-	background: url(../img/footer.png);
-}
-
-
-
-.footer{
-	padding: 20px 0;	
-}
-.footer1{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: start;
-}
-.footer1item{
-	display: flex;
-	width: 50%;
-	flex-wrap: wrap;
-}
-.footer2item{
-	display: flex;
-	flex-wrap: wrap;
-}
-.list{
-	width: 100%;
-}
-.list h4{
-	font-size: 21px;
-	color: var(--thired-color);
-	margin-bottom: 30px;
-	position: relative;
-}
-
-.list ul li:not(last-child) {
-	margin-bottom: 8px;
-}
-.list ul li a{
-	color: #fffdfdbf;
-	font-size: var(--p-font);
-	display: block;
-	transition: .3s;
-	font-size: 24px;
-	font-weight: 400; 
-
-}
-.list ul li a:hover{
-	color: var(--bg-color);
-	transform: translateX(14px);
-}
-.social {
-	display: flex;
-	width: 50%;
-	justify-content: space-between;
-	align-items: center;
-}
-.social a{
-	height: 40px;
-	width: 40px;
-	border-radius: 15px;
-	transition: .3s;
-	
-}
-.list .social a:hover{
-	transform: scale(1.1);
-}
-.end-text{
-	text-align: center;
-	padding-top: 90px;
-}
-.end-text p{
-	color: var(--fourthed-color) ;
-	font-size: 24px;
-	font-weight: 600;
-	letter-spacing: 2px;
-}
-
-
-
-
-
 
 
 .tabs {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
-    border: medium dashed rgb(63, 30, 172);
+ 
 	justify-content: space-around;
 	padding: 10px 10%;
   }
@@ -641,3 +584,99 @@ h2 {
 	display: initial;
   }
   
+
+  /*********************** footer *****************/
+#sectionfooter{
+	background: url(../img/footer.png); 
+		background-size: cover; 
+
+}
+
+
+
+.footer{
+	padding: 20px 20px;	
+}
+.footerhead{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+	margin: 20px 0px;
+	padding-bottom: 10px;
+	border-bottom:1px solid var(--fourthed-color);
+	font-size: 24px;
+	color:var(--thired-color);
+	font-family: 'Inter', sans-serif;
+	font-weight: 400px;
+	align-items: center;
+}
+.footer1{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+	margin: 10px 0px;
+
+}
+.footer1item{
+	display: flex;
+	width: 50%;
+	flex-wrap: wrap;
+	
+}
+.footer2item{
+	display: flex;
+	flex-wrap: wrap;
+}
+.list{
+	width: 100%;
+}
+.list h4{
+	font-size: 36px;
+	color: var(--thired-color);
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.list ul li:not(last-child) {
+	margin-bottom: 8px;
+}
+.list ul li a{
+	color: #fffdfdbf;
+	font-size: var(--p-font);
+	display: block;
+	transition: .3s;
+	font-size: 24px;
+	font-weight: 600; 
+
+}
+.list ul li a:hover{
+	color: var(--bg-color);
+	transform: translateX(14px);
+}
+.social {
+	display: flex;
+	width: 50%;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+}
+.social a{
+	height: 40px;
+	width: 40px;
+	border-radius: 15px;
+	transition: .3s;
+	
+}
+.list .social a:hover{
+	transform: scale(1.1);
+}
+.end-text{
+	text-align: center;
+	padding-top: 90px;
+}
+.end-text p{
+	color: var(--fourthed-color) ;
+	font-size: 24px;
+	font-weight: 600;
+	letter-spacing: 2px;
+}
